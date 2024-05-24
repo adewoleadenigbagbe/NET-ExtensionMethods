@@ -39,19 +39,5 @@ namespace Net.ExtensionMethods
             }
            dictionary[key] = collection;
         }
-
-        public static void Test()
-        {
-            var dictionary = new Dictionary<int, List<int>>();
-            if (!dictionary.TryGetValue(1, out var ints))
-            {
-                dictionary[1] = new List<int>();
-            }
-            else
-            {
-                ints.AddRange(new List<int>());
-                dictionary[1] = ints;
-            }
-        }
     }
 }
