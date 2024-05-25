@@ -40,12 +40,5 @@ namespace Net.ExtensionMethods
             }
             source[key] = collection;
         }
-
-        public static void Test()
-        {
-            var dictionary  = new Dictionary<int, List<int>>();
-            dictionary.AddToList(1, 1);
-
-        }
     }
 }
